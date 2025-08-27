@@ -16,6 +16,11 @@ export const metadata: Metadata = {
   title: 'HIROKI ISHIDA | Portfolio Site',
   description: '',
   robots: 'noindex, nofollow',
+  icons: {
+    icon: '/favicon.ico',
+    apple: '/apple-touch-icon.png',
+    shortcut: '/favicon.png',
+  },
 }
 
 export default function RootLayout({
