@@ -36,3 +36,54 @@
 ::selection {
   background: #8dfe30;
 }
+
+@layer base {
+  .prose {
+    & > h1 {
+      @apply text-4xl;
+      @apply font-bold;
+      @apply my-8 md:my-12;
+    }
+    & > h2 {
+      @apply text-3xl;
+      @apply font-bold;
+      @apply my-8 md:my-12;
+    }
+    & > p {
+      @apply my-8 md:my-12;
+      @apply leading-loose;
+    }
+    & > figure {
+      @apply my-8 md:my-12;
+    }
+    & > ul {
+      @apply list-disc;
+      @apply pl-5;
+    }
+    & > table {
+      @apply w-full;
+      @apply border-collapse;
+      @apply my-8 md:my-12;
+      th {
+        @apply py-2 px-6;
+        @apply bg-gray-900;
+        @apply border;
+        @apply border-solid;
+        @apply border-gray-900;
+        p {
+          @apply text-white;
+        }
+      }
+      td {
+        @apply py-2 px-6;
+        @apply border;
+        @apply border-solid;
+        @apply border-gray-900;
+      }
+    }
+  }
+}
+
+@layer components {}
+
+@layer utilities{}

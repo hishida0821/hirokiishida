@@ -35,7 +35,7 @@ export default async function ProductsPostPage({ params }: { params: Promise<{ i
           <img src={imageUrl} alt={post.title} className='w-full h-auto mb-2 rounded-[4px] md:rounded-lg' />
         </figure>
         {post.content && (
-          <div dangerouslySetInnerHTML={{ __html: post.content }} />
+          <div className='prose' dangerouslySetInnerHTML={{ __html: post.content }} />
         )}
       </Section>
     </>
